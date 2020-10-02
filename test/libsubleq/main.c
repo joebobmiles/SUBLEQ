@@ -3,8 +3,8 @@
 
 UTEST(config, returns_status_normal)
 {
-	double program[] = { 0, 0, -1 };
-	ASSERT_EQ(STATUS_NORMAL, subleq_execute(program, sizeof(program)));
+    double program[] = { 0, 0, -1 };
+    ASSERT_EQ(STATUS_NORMAL, subleq_execute(program, sizeof(program)));
 }
 
 UTEST_MAIN();

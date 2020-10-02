@@ -5,13 +5,13 @@
 
 typedef enum subleq_status_e
 {
-	STATUS_NORMAL,
+    STATUS_NORMAL,
 } subleq_status;
 
 subleq_status
 subleq_execute(double* program, size_t program_size)
 {
-	return STATUS_NORMAL;
+    return STATUS_NORMAL;
 }
 
 #endif
