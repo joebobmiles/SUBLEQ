@@ -1,0 +1,3 @@
+[submodule "include/utest"]
+	path = include/utest
+	url = https://github.com/sheredom/utest.h
