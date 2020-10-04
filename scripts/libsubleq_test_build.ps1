@@ -3,12 +3,13 @@ if (-not (Test-Path .\bin)) {
     md .\bin | Out-Null
 }
 
-pushd .\bin
+Push-Location .\bin
 
 clang-cl /Zi `
     /std:c99 `
     /I ..\include `
-    ..\test\libsubleq\main.c `
-    /o libsubleq_test.exe
+    /o libsubleq_test.exe `
+    -Wno-unused-command-line-argument `
+    ..\test\libsubleq\main.c
 
-popd
+Pop-Location
