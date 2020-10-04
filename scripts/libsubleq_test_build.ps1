@@ -5,10 +5,10 @@ if (-not (Test-Path .\bin)) {
 
 pushd .\bin
 
-clang-cl -g `
-    -std=c99 `
-    -I ..\include `
+clang-cl /Zi `
+    /std:c99 `
+    /I ..\include `
     ..\test\libsubleq\main.c `
-    -o libsubleq_test.exe
+    /o libsubleq_test.exe
 
 popd
