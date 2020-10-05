@@ -25,7 +25,7 @@ subleq_execute(
     size_t program_size,
     subleq_execute_options* options)
 {
-    if (program_size % 3 != 0)
+    if (program_size % 3 != 0 || program == NULL)
         return SUBLEQ_STATUS_INVALID_PROGRAM;
 
     return SUBLEQ_STATUS_NORMAL;
