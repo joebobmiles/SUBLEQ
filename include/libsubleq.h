@@ -16,12 +16,12 @@ typedef enum subleq_status_e
 
 typedef struct subleq_execute_options_s
 {
-    unsigned int instruction_count;
+    unsigned int max_cycles;
 } subleq_execute_options;
 
 subleq_status
 subleq_execute(
-    double* program,
+    int* program,
     size_t program_size,
     subleq_execute_options* options)
 {
