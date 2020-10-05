@@ -26,6 +26,7 @@ subleq_execute(
     subleq_execute_options* options)
 {
     // TODO
+    return SUBLEQ_STATUS_NORMAL;
 }
 
 #endif
