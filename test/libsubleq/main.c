@@ -1,8 +1,6 @@
 #include "utest/utest.h"
 #include "libsubleq.h"
 
-// TODO
-
 UTEST(subleq_execute, returns_status_normal_for_empty_program)
 {
     int program[] = { 0 };
