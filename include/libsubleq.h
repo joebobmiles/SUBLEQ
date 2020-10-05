@@ -28,11 +28,6 @@ subleq_execute(
     if (program_size % 3 != 0)
         return SUBLEQ_STATUS_INVALID_PROGRAM;
 
-    while ((options->instruction_count--) > 0)
-    {
-        program[1] = program[0] - program[1];
-    }
-
     return SUBLEQ_STATUS_NORMAL;
 }
 
